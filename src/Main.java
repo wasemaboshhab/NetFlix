@@ -76,9 +76,9 @@ public class Main {
     private static NetflixSystem initNetflixSeries() {
 
 
-        Data broadcastTimeSerpent1 = new Data(20, 6, 2021);
-        Data broadcastTimeSerpent2 = new Data(22, 6, broadcastTimeSerpent1.getYear());
-        Data broadcastTimeSerpent3 = new Data(24, 6, broadcastTimeSerpent2.getYear());
+        EpisodeDate broadcastTimeSerpent1 = new EpisodeDate(20, 6, 2021);
+        EpisodeDate broadcastTimeSerpent2 = new EpisodeDate(22, 6, broadcastTimeSerpent1.getYear());
+        EpisodeDate broadcastTimeSerpent3 = new EpisodeDate(24, 6, broadcastTimeSerpent2.getYear());
 
         Episode[] serpentEpisodes = {
                 new Episode("The Serpent episode 1", "brings a baseline into Charles Sobhraj’s sinister world.", broadcastTimeSerpent1),
@@ -88,9 +88,9 @@ public class Main {
         };
 
 
-        Data broadcastTimeSnabbaCash1 = new Data(28, 7, 2021);
-        Data broadcastTimeSnabbaCash2 = new Data(broadcastTimeSnabbaCash1.getDay() + 1, broadcastTimeSnabbaCash1.getMonth(), broadcastTimeSnabbaCash1.getYear());
-        Data broadcastTimeSnabbaCash3 = new Data(broadcastTimeSnabbaCash2.getDay() + 1, broadcastTimeSnabbaCash1.getMonth(), broadcastTimeSnabbaCash1.getYear());
+        EpisodeDate broadcastTimeSnabbaCash1 = new EpisodeDate(28, 7, 2021);
+        EpisodeDate broadcastTimeSnabbaCash2 = new EpisodeDate(broadcastTimeSnabbaCash1.getDay() + 1, broadcastTimeSnabbaCash1.getMonth(), broadcastTimeSnabbaCash1.getYear());
+        EpisodeDate broadcastTimeSnabbaCash3 = new EpisodeDate(broadcastTimeSnabbaCash2.getDay() + 1, broadcastTimeSnabbaCash1.getMonth(), broadcastTimeSnabbaCash1.getYear());
 
         Episode[] snabbaCashEpisodes = {
                 new Episode("Snabba Cash episode 1", "begins with Leya psyching herself up and arriving in her office. Walking purposefully", broadcastTimeSnabbaCash1),
@@ -98,9 +98,9 @@ public class Main {
                 new Episode("Snabba Cash episode 3", "Leya taking steps toward buying out Marcus.", broadcastTimeSnabbaCash3)
 
         };
-        Data xyz1 = new Data(26, 6, 2021);
-        Data xyz2 = new Data(xyz1.getDay() + 1, xyz1.getMonth(), broadcastTimeSnabbaCash1.getYear());
-        Data xyz3 = new Data(xyz1.getDay() + 1, xyz1.getMonth(), broadcastTimeSnabbaCash1.getYear());
+        EpisodeDate xyz1 = new EpisodeDate(26, 6, 2021);
+        EpisodeDate xyz2 = new EpisodeDate(xyz1.getDay() + 1, xyz1.getMonth(), broadcastTimeSnabbaCash1.getYear());
+        EpisodeDate xyz3 = new EpisodeDate(xyz1.getDay() + 1, xyz1.getMonth(), broadcastTimeSnabbaCash1.getYear());
 
         Episode[] xyzEpisodes = {
                 new Episode("x", "no thing", xyz1),

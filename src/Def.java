@@ -1,8 +1,8 @@
 public class Def {
 
     public static final int DAYS = 30;
-    public static final int CURRENT_YEAR = 2021;
     public static final int MONTHS = 12;
+    public static final int SUBSCRIPTION_ONE_YEAR = 1;
 
     public static final int CREATE_ACCOUNT = 1;
     public static final int LOGIN = 2;

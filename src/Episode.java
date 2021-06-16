@@ -1,11 +1,11 @@
 public class Episode {
     private String name;
     private String recap;
-    private Data broadcastTime;
+    private EpisodeDate broadcastTime;
 
 
 
-    public Episode(String name, String recap, Data broadcastTime) {
+    public Episode(String name, String recap, EpisodeDate broadcastTime) {
         this.name = name;
         this.recap = recap;
         this.broadcastTime = broadcastTime;
@@ -34,11 +34,11 @@ public class Episode {
         this.recap = recap;
     }
 
-    public Data getBroadcastTime() {
+    public EpisodeDate getBroadcastTime() {
         return broadcastTime;
     }
 
-    public void setBroadcastTime(Data broadcastTime) {
+    public void setBroadcastTime(EpisodeDate broadcastTime) {
         this.broadcastTime = broadcastTime;
     }
 

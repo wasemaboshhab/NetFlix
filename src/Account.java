@@ -1,11 +1,13 @@
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Account {
     private String userName;
     private String password;
-    private Data creation;
-    private Data runOut;
+    private Date creation;
+    private Date runOut;
     private Series[] seriesWatched;
 
     public Account(String userName, String password) {
@@ -16,8 +18,8 @@ public class Account {
             System.out.println("Enter a Strong Password\n(atleast 6 digits one char, one alphabetic digit)");
             this.password = scanner.next();
         }
-        this.creation = new Data(0, 0, 0).creating();
-        this.runOut = new Data(creation.getDay(), creation.getMonth(), creation.getYear() + 1);
+        this.creation = Date.valueOf(LocalDate.now());
+        this.runOut = Date.valueOf(LocalDate.now().plusYears(Def.SUBSCRIPTION_ONE_YEAR));
     }
 
     private boolean isStrongPassword(String userPassword) {
@@ -55,19 +57,19 @@ public class Account {
         this.password = password;
     }
 
-    public Data getCreation() {
+    public Date getCreation() {
         return creation;
     }
 
-    public void setCreation(Data creation) {
+    public void setCreation(Date creation) {
         this.creation = creation;
     }
 
-    public Data getRunOut() {
+    public Date getRunOut() {
         return runOut;
     }
 
-    public void setRunOut(Data runOut) {
+    public void setRunOut(Date runOut) {
         this.runOut = runOut;
     }
 
